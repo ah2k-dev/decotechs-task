@@ -1,0 +1,131 @@
+/* styles */
+/* max and min height for header */
+.mxH80{
+  max-height: 80px;
+  min-height: 80px;
+}
+/* applying bg and txt color on whole app */
+#root{
+  background: #202124;
+  color: whitesmoke;
+}
+.page{
+  height: calc(100vh - 80px);
+  overflow:hidden;
+}
+a {
+  color: white !important;
+}
+/* todo list */
+.todoCont{
+  height: 70vh;
+  min-height: 400px;
+  max-height: 800px;
+  overflow: auto;
+}
+.todo-item{
+  cursor: pointer;
+}
+/* modal */
+.modal-content{
+  background: #202124 !important;
+  color: whitesmoke !important;
+
+}
+/* scrollbar style */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #a99d9d;;
+  border-radius: 12px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #404040;
+  border-radius: 12px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: black;
+  border-radius: 12px;
+  transition: all ease-in .8s;
+}
+/* indicators */
+.indicateComplete{
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background: green;
+  margin-top: -25px;
+  margin-left: -25px;
+}
+.indicatePending{
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background: yellow;
+  margin-top: -25px;
+  margin-left: -25px;
+}
+.indicateUncomplete{
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background: red;
+  margin-top: -25px;
+  margin-left: -25px;
+}
+
+/* LOADER */
+.loading {
+  width: 100vw;
+  height: 95vh;
+  background-color: white;
+  display: grid;
+  place-items: center;
+  max-width: 100%;
+}
+.loading > div {
+  width: 10vmax;
+  height: 10vmax;
+  border-bottom: 5px solid rgba(0, 0, 0, 0.719);
+  border-radius: 50%;
+  animation: loadingRotate 800ms linear infinite;
+}
+@keyframes loadingRotate {
+  to {
+    transform: rotateZ(-360deg);
+  }
+}
+
+
+/* button ids */
+#btnLogout{
+  background: none;
+  padding: 10px;
+  border-radius: 50%;
+  border: none;
+}
+#btnLogout:hover{
+  background: #3b3c41;
+  transition: all ease-in 0.4s;
+}
+#btnLogout > img {
+  width: 35px;
+  height: 32px;
+}
+#btnLogin{
+  background: #bcbcbe;
+  padding: 10px;
+  border-radius: 5%;
+  border: none;
+}
+#btnLogin:hover{
+  background: #3b3c41;
+  transition: all ease-in 0.4s;
+}
